@@ -1,0 +1,31 @@
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe ul {
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  bottom: .1rem;
+}
+.swipe ul li {
+  margin: 0 .05rem;
+  display: inline-block;
+  width: .1rem;
+  height: .1rem;
+  background-color: red;
+  border-radius: 50%;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.swipe-wrap img {
+  width: 100%;
+}

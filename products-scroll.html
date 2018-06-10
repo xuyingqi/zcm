@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>我的钱</title>
+	<link rel="stylesheet" href="css/products.css">
+	<script src="./js/zepto.min.js"></script>
+
+	<script src="./js/swipe.js"></script>
+	<script src="./js/touch.js"></script>
+	<script src="./js/iscroll-probe.js"></script>
+
+	<style>
+	#wraper{
+		height: 6rem;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+	}
+	#scroll{
+		position: absolute;
+		width: 100%;
+	}
+	</style>
+	
+</head>
+<body style="height:100%;">
+	<header>
+		<a class="link-back" href="index.html"></a>
+		<h2>招财猫理财</h2>
+		<a id="link-menu" class="link-menu" href="javascript:void(0);">菜单</a>
+	</header>
+	<section class="adv">
+		<a href=""><img src="./img/list_banner.jpg" alt=""></a>
+	</section>
+	<div id="wraper">
+		<div id="scroll">
+			<section class="products" id="products">
+				<div class="product">
+					<h3>新手专享6748号</h3>
+					<ul>
+						<li class="data1">12.88%</li>
+						<li class="data2">
+							<p><em>5</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="3"> <!-- 90*360/100 -->
+						<div class="bg">90%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="product">
+					<h3>助企计划6775号</h3>
+					<ul>
+						<li class="data1"><em>7.5%</em>+1%</li>
+						<li class="data2">
+							<p><em>60</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="50" >
+							<div class="bg">25%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+				<div class="product">
+					<h3>超短期701期</h3>
+					<ul>
+						<li class="data1"><em>7%</em>+0.8%</li>
+						<li class="data2">
+							<p><em>15</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="80"> <!-- 90*360/100 -->
+						<div class="bg">90%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="product">
+					<h3>超短期702期</h3>
+					<ul>
+						<li class="data1"><em>7%</em>+0.8%</li>
+						<li class="data2">
+							<p><em>15</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="90"> <!-- 90*360/100 -->
+						<div class="bg">90%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+				<div class="product">
+					<h3>超短期702期1</h3>
+					<ul>
+						<li class="data1"><em>7%</em>+0.8%</li>
+						<li class="data2">
+							<p><em>15</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="90"> <!-- 90*360/100 -->
+						<div class="bg">90%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+				<div class="product">
+					<h3>超短期702期2</h3>
+					<ul>
+						<li class="data1"><em>7%</em>+0.8%</li>
+						<li class="data2">
+							<p><em>15</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="90"> <!-- 90*360/100 -->
+						<div class="bg">90%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+				<div class="product">
+					<h3>超短期702期3</h3>
+					<ul>
+						<li class="data1"><em>7%</em>+0.8%</li>
+						<li class="data2">
+							<p><em>15</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="90"> <!-- 90*360/100 -->
+						<div class="bg">90%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<div id="pullUp" class="ub ub-pc c-gra">  
+                <div class="pullUpIcon"></div>  
+                <div class="pullUpLabel">上拉显示更多...</div>  
+            </div> 
+        </div> 
+	</div>
+	
+<script type="text/template" id="template">
+	<div class="product">
+		<h3>新手专享6748号</h3>
+		<ul>
+			<li class="data1">12.88%</li>
+			<li class="data2">
+				<p><em>5</em>天</p>
+				<p>投资期限</p>
+			</li>
+			<li class="data3" data-pro="3"> <!-- 90*360/100 -->
+			<div class="bg">90%</div>
+				<div class="outer" style="">
+					<div class="inner" style=""></div>
+				</div>
+				<div class="over50" style=""></div>
+			</li>
+		</ul>
+	</div>
+</script>
+	<footer>
+		<p class="footlinks">
+			<a href="">触屏版</a>
+			|<a href="">电脑版</a>
+			|<a href="">APP下载</a>
+		</p>
+		<p class="copyright">@2016招财猫理财 浙ICP备14041616号</p>
+	</footer>
+
+	<div id = "menu" class="menu" style="display:none;">
+		<div class="menulist">
+			<a href="" class="icon-home1">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+			<a href="" class="icon-home2">安全保障</a>
+			<a href="" class="icon-home3">我要投资</a>
+			<a href="" class="icon-home4">用户中心</a>
+		</div>
+		<div class="mask" id="mask">
+		</div>
+	</div>
+
+
+
+	<script src="./js/myApp.js"></script>
+
+	<script>
+		$("#pullUp").hide();
+		iscroll = new IScroll("#wraper",{
+			//probeType: 2//probeType：1对性能没有影响。在滚动事件被触发时，滚动轴是不是忙着做它的东西。probeType：2总执行滚动，除了势头，反弹过程中的事件。这类似于原生的onscroll事件。probeType：3发出的滚动事件与到的像素精度。注意，滚动被迫requestAnimationFrame（即：useTransition：假）。  
+            //scrollbars: true,//有滚动条  
+           // mouseWheel: true,//允许滑轮滚动  
+            //fadeScrollbars: true,//滚动时显示滚动条，默认隐藏，并且是淡出淡入效果  
+            //bounce:true,//边界反弹  
+            //interactiveScrollbars:true,//滚动条可以拖动  
+            //shrinkScrollbars:'scale',// 当滚动边界之外的滚动条是由少量的收缩。'clip' or 'scale'.  
+            //click: true ,// 允许点击事件  
+            //keyBindings:true,//允许使用按键控制  
+            //momentum:true// 允许有惯性滑动 
+		})
+		console.info(iscroll);
+		iscroll.on("scroll",function(e){
+			console.info(this.y,this.maxScrollY);
+			if(this.y < this.maxScrollY-10){
+				$("#pullUp").show();
+			}
+			//iscroll.refresh();
+		});
+		iscroll.on('scrollEnd',function(e){ 
+			$("#pullUp").hide();
+			console.info("add something");
+
+			$("#products").append($($("#template").html()));
+			iscroll.refresh();
+			//console.info(" scrollEnd e");
+		}); 
+
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+	// 点透
+		$("#link-menu").on("click",function(e){
+			$("#menu").toggle();
+
+		});
+		$("#mask").on("tap",function(){
+			$("#menu").hide();
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{box-sizing: border-box;}
+		.bg{
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			border:3px solid #ccc;
+			text-align: center;
+			font-size: 30px;
+			line-height: 200px;
+
+		}
+		.outer{
+			position: absolute; /*绝对定位*/
+			width: 200px;
+			height: 200px;
+			clip:rect(0 200px 200px 100px); /*显示元素的子元素右半部分*/
+		}
+		.inner{
+			position: absolute;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			border:3px solid red;
+			clip: rect(0 100px 200px 0 ); /*显示自己的左半部分*/
+			transform: rotate(90deg); 
+			/* 360 <----> 100%
+			   90  <----> 25%
+			   x   <----> X* 360/100 %
+			*/
+		}
+	</style>
+</head>
+<body>
+	<h1>clip</h1>
+	<div class="bg">25%
+	</div>
+	<div class="outer">
+		<div class="inner"></div>
+	</div>
+</body>
+</html>

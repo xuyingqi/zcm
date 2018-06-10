@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>关于我们</title>
+	<link rel="stylesheet" href="css/about.css">
+	<script src="./js/zepto.min.js"></script>
+
+	<script src="./js/swipe.js"></script>
+	<script src="./js/touch.js"></script>
+
+
+</head>
+<body>
+	<header>
+		<a class="link-back" href="index.html"></a>
+		<h2>招财猫理财</h2>
+		<a id="link-menu" class="link-menu" href="javascript:void(0);">菜单</a>
+	</header>
+	<section class="about">
+		<h3>公司简介</h3>
+		<p>招财猫理财创始人及其核心团队均来自于知名的网络公司、金融公司、银行和风投管理机构。发展过程中，尤其注重引入多项战略合作，逐渐壮大的资本实力为招财猫理财的团队建设提供了坚实基础。</p>
+
+		<p>招财猫理财以打造最具诚意的互联网金融平台为使命，全员只做一件事： 为投融双方竭诚服务，让投融双真正受益，打造一个极致体验的互联网金融平台。</p>
+
+
+
+		<h3>发展历程</h3>
+		<ul class="history">
+			<li>
+				<span class="date">2014.08</span>
+				<p>杭州招财猫网络科技有限公司成立</p>
+			</li>
+			<li>
+				<span class="date">2014.09</span>
+				<p>与连连第三方支付达成合作协议</p>
+				</li>
+			<li>
+				<span class="date">2014.08</span>
+				<p>招财猫理财官网正式上线</p>
+				</li>
+			<li>
+				<span class="date">2014.12</span>
+				<p>成为浙江互联网金融协会理事单位（共十家）</p>
+				</li>
+				<li>
+				<span class="date">2015.01</span>
+				<p>招财猫理财APP正式上线1</p>
+			</li>
+			<li>
+				<span class="date">2015.01</span>
+				<p>招财猫理财APP正式上线</p>
+			</li>
+		</ul>
+	</section>
+
+	<footer>
+		<p class="footlinks">
+			<a href="">触屏版</a>
+			|<a href="">电脑版</a>
+			|<a href="">APP下载</a>
+		</p>
+		<p class="copyright">@2016招财猫理财 浙ICP备14041616号</p>
+	</footer>
+
+	<div id = "menu" class="menu" style="display:none;">
+		<div class="menulist">
+			<a href="" class="icon-home1">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+			<a href="" class="icon-home2">安全保障</a>
+			<a href="" class="icon-home3">我要投资</a>
+			<a href="" class="icon-home4">用户中心</a>
+		</div>
+		<div class="mask" id="mask">
+		</div>
+	</div>
+
+	<script src="./js/myApp.js"></script>
+
+	<script>
+
+	// 点透
+		$("#link-menu").on("click",function(e){
+			//console.info($("#menu").css("display"))
+			// if($("#menu").css("display")  == "block"){
+			// 	$("#menu").hide();
+			// }
+			// else{
+			// 	$("#menu").show();
+			// }
+
+			$("#menu").toggle();
+			// e.stopPropagation();
+			// e.preventDefault();
+
+		});
+		$("#mask").on("tap",function(){
+			$("#menu").hide();
+		})
+	</script>
+</body>
+</html>

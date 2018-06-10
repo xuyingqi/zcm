@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>我的钱</title>
+	<link rel="stylesheet" href="css/products.css">
+	<script src="./js/zepto.min.js"></script>
+
+	<script src="./js/swipe.js"></script>
+	<script src="./js/touch.js"></script>
+	<script src="./js/iscroll-probe.js"></script>
+
+	<style>
+		#wrap{
+			position: relative;
+			height: 600px;
+			width: 100%;
+		}
+		#content{
+			position: absolute;
+			width: 100%;
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+		<a class="link-back" href="index.html"></a>
+		<h2>招财猫理财</h2>
+		<a id="link-menu" class="link-menu" href="javascript:void(0);">菜单</a>
+	</header>
+	<section class="adv">
+		<a href=""><img src="./img/list_banner.jpg" alt=""></a>
+	</section>
+	<div id="wrap">
+		<div id="content">
+			<section class="products" id="products">
+				<div class="product">
+					<h3>新手专享6748号</h3>
+					<ul>
+						<li class="data1">12.88%</li>
+						<li class="data2">
+							<p><em>5</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="3"> <!-- 90*360/100 -->
+						<div class="bg">90%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+				<div class="product">
+					<h3>新手专享6748号</h3>
+					<ul>
+						<li class="data1">12.88%</li>
+						<li class="data2">
+							<p><em>5</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="3"> <!-- 90*360/100 -->
+						<div class="bg">90%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+				<div class="product">
+					<h3>新手专享6748号</h3>
+					<ul>
+						<li class="data1">12.88%</li>
+						<li class="data2">
+							<p><em>5</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="3"> <!-- 90*360/100 -->
+						<div class="bg">90%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+				<div class="product">
+					<h3>新手专享6748号</h3>
+					<ul>
+						<li class="data1">12.88%</li>
+						<li class="data2">
+							<p><em>5</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="3"> <!-- 90*360/100 -->
+						<div class="bg">90%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+				<div class="product">
+					<h3>新手专享6748号</h3>
+					<ul>
+						<li class="data1">12.88%</li>
+						<li class="data2">
+							<p><em>5</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="3"> <!-- 90*360/100 -->
+						<div class="bg">90%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="product">
+					<h3>助企计划6775号</h3>
+					<ul>
+						<li class="data1"><em>7.5%</em>+1%</li>
+						<li class="data2">
+							<p><em>60</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="50" >
+							<div class="bg">25%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+				<div class="product">
+					<h3>超短期701期</h3>
+					<ul>
+						<li class="data1"><em>7%</em>+0.8%</li>
+						<li class="data2">
+							<p><em>15</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="80"> <!-- 90*360/100 -->
+						<div class="bg">90%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="product">
+					<h3>超短期702期</h3>
+					<ul>
+						<li class="data1"><em>7%</em>+0.8%</li>
+						<li class="data2">
+							<p><em>15</em>天</p>
+							<p>投资期限</p>
+						</li>
+						<li class="data3" data-pro="90"> <!-- 90*360/100 -->
+						<div class="bg">90%</div>
+							<div class="outer" style="">
+								<div class="inner" style=""></div>
+							</div>
+							<div class="over50" style=""></div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<div id="drag" style="display:none;">
+				上拉刷新
+			</div>
+		</div>
+	</div>
+	<footer>
+		<p class="footlinks">
+			<a href="">触屏版</a>
+			|<a href="">电脑版</a>
+			|<a href="">APP下载</a>
+		</p>
+		<p class="copyright">@2016招财猫理财 浙ICP备14041616号</p>
+	</footer>
+	
+	<div id = "menu" class="menu" style="display:none;">
+		<div class="menulist">
+			<a href="" class="icon-home1">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+			<a href="" class="icon-home2">安全保障</a>
+			<a href="" class="icon-home3">我要投资</a>
+			<a href="" class="icon-home4">用户中心</a>
+		</div>
+		<div class="mask" id="mask">
+		</div>
+	</div>
+
+<script type="text/tempalte" id="template">
+	<div class="product">
+		<h3>超短期702期00001</h3>
+		<ul>
+			<li class="data1"><em>7%</em>+0.8%</li>
+			<li class="data2">
+				<p><em>15</em>天</p>
+				<p>投资期限</p>
+			</li>
+			<li class="data3" data-pro="{{data}}"> <!-- 90*360/100 -->
+			<div class="bg">90%</div>
+				<div class="outer" style="">
+					<div class="inner" style=""></div>
+				</div>
+				<div class="over50" style=""></div>
+			</li>
+		</ul>
+	</div>
+</script>
+
+	<script src="./js/myApp.js"></script>
+	<script>
+
+		var myScroll = new IScroll('#wrap', { 
+			mouseWheel: true,
+			probeType:2 
+		});
+
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+		console.info(myScroll);
+
+		var drag = 0;
+		myScroll.on("scroll",function(){
+			//console.info("scroll",this);
+			console.info(this.y,this.maxScrollY);
+			if(drag == 0){
+				if(this.y < this.maxScrollY - 10){
+					console.info("用户拉的太厉害，你要准备加载.....")
+					drag = 1; //去加载
+					$("#drag").show();
+				}
+			}
+		});
+
+		myScroll.on("scrollEnd",function(){
+			if(drag == 1){
+				console.info("scrollend",this);
+				//加载新数据
+				var str = $("#template").html();
+				//对模板字符串str进行数据替换
+				//{{data}} --> 79
+				//产生一个随机值
+				var d = Math.ceil( Math.random()*100 );
+				console.info(d);
+				str = str.replace("{{data}}",d);
+
+				$("#products").append($(str));
+
+
+//找到所有 的data3中 data-pro属性值
+  $(".data3").each(function(){
+    //找到设置的进度值 以百分比为单位.
+    var pro = $(this).attr("data-pro");
+    
+    var deg = pro * 360 / 100;  //得到度数
+    //设置文本的值
+    $(this).find(".bg").html(pro+"%");
+
+    if(deg <=180){//1.不过超50% 不超过180度
+      $(this).find(".over50").hide();//(1)over50不显示
+      //(2)Inner
+        // a)只显示左边一半
+        // b)旋转角度（默认顺时针，向右转）
+      $(this).find(".inner").css({"clip":"rect(0 0.58rem 1.16rem 0)"
+        ,"transform":"rotate("+deg+"deg)"});
+      // (3)Outer
+      $(this).find(".outer").css("clip","rect(0 1.16rem 1.16rem .58rem)")
+      // a)只显示右边一半
+    }
+    else if(deg <=360){
+
+// (1)over50显示
+    $(this).find(".over50").show();
+    $(this).find(".over50").css("clip","rect(0 1.16rem 1.16rem 0.58rem")
+// a)只显示右边一半（表示整个度数中的180度）
+  
+// (2)Inner
+// a)只显示左边一半
+// b)旋转角度（默认顺时针，向右转）
+    $(this).find(".inner").css({"clip":"rect(0 0.58rem 1.16rem 0)"
+        ,"transform":"rotate("+deg+"deg)"});
+//(3)outer只显示左边一半
+    $(this).find(".outer").css("clip","rect(0 0.58rem 1.16rem 0)")
+    }
+    console.info($(this).attr("data-pro"))
+  })
+
+
+				this.refresh();
+
+				$("#drag").hide();
+				drag = 0;
+			}
+		})
+	// 点透
+		$("#link-menu").on("click",function(e){
+			$("#menu").toggle();
+
+		});
+		$("#mask").on("tap",function(){
+			$("#menu").hide();
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@import "basic.less";
+@color1 :#4b4a4a;
+@color2 :#808080;
+.c80{color:@color2}
+.c1{color:@color1}
+/**************************** 头部 **********/
+body{
+	position:relative;
+}
+header,section,footer{
+	font-size:.2rem;
+}
+header{
+	line-height:.85rem;
+	height: .85rem;
+	background-color: #fa3432;
+	display: flex;
+	padding: 0 .2rem;
+	justify-content:space-between;
+	align-items: center;
+	font-size:.26rem;
+	color:#fff;
+	.link-back{
+		background: url(../img/link_back.png) no-repeat;
+		background-size:.39rem .26rem;
+		width: .39rem;
+		height: .26rem;
+		text-indent: -999rem;
+	}
+	.link-menu{
+		background: url(../img/link_menu.png) no-repeat;
+		background-size:.36rem .29rem;
+		width: .36rem;
+		height: .29rem;
+		text-indent: -999rem;
+	}
+}
+section form{
+	
+}
+
+div.menu{
+	
+	position:absolute;
+	top: 0; /*115px + 80px;*/
+	left:0;
+	right:0;
+	bottom: 0;
+	background-color:rgba(0,0,0,.5);
+
+}
+@import "products_mod.less";
+@import "footer.less";

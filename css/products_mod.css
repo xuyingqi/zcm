@@ -1,0 +1,64 @@
+.c80 {
+  color: #808080;
+}
+.c1 {
+  color: #4b4a4a;
+}
+.products .product {
+  margin: .2rem;
+  border: .01rem solid #ccc;
+  padding: .2rem;
+  background-color: #fff;
+}
+.products .product ul {
+  display: flex;
+}
+.products .product ul .data1 {
+  width: 2.64rem;
+  font-size: 0.38rem;
+  color: #fb4438;
+  text-align: center;
+  line-height: 1.2rem;
+}
+.products .product ul .data2 {
+  width: 1.8rem;
+  height: 1.2rem;
+  line-height: .6rem;
+  color: #808080;
+}
+.products .product ul .data2 em {
+  color: #4b4a4a;
+  margin-right: .05rem;
+}
+.products .product ul .data3 {
+  width: 1.16rem;
+  height: 1.16rem;
+  position: relative;
+}
+.products .product ul .data3 .outer {
+  position: absolute;
+  width: 1.16rem;
+  height: 1.16rem;
+}
+.products .product ul .data3 .bg,
+.products .product ul .data3 .inner,
+.products .product ul .data3 .over50 {
+  position: absolute;
+  width: 1.16rem;
+  height: 1.16rem;
+  border: .03rem solid #ccc;
+  border-radius: 50%;
+}
+.products .product ul .data3 .inner {
+  transition: transform .3s;
+}
+.products .product ul .data3 .bg {
+  font-size: .3rem;
+  color: red;
+  line-height: 1.16rem;
+  text-align: center;
+}
+.products .product ul .data3 .inner,
+.products .product ul .data3 .over50 {
+  border-color: red;
+}

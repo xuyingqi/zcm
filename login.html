@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>登陆</title>
+	<link rel="stylesheet" href="css/login.css">
+	<script src="./js/zepto.min.js"></script>
+
+	<script src="./js/swipe.js"></script>
+	<script src="./js/touch.js"></script>
+
+
+</head>
+<body style="height:100%;">
+	<header>
+		<a class="link-back" href="index.html"></a>
+		<h2>招财猫理财</h2>
+		<a id="link-menu" class="link-menu" href="javascript:void(0);">菜单</a>
+	</header>
+	<section class="about">
+		<form action="">
+			<input type="text" id="phone">
+			<button id="btn">下一步</button>
+		</form>
+	</section>
+
+	<footer>
+		<p class="footlinks">
+			<a href="">触屏版</a>
+			|<a href="">电脑版</a>
+			|<a href="">APP下载</a>
+		</p>
+		<p class="copyright">@2016招财猫理财 浙ICP备14041616号</p>
+	</footer>
+
+	<div id = "menu" class="menu" style="display:none;">
+		<div>请输入正确的手机号</div>
+	</div>
+
+	<script src="./js/myApp.js"></script>
+
+	<script>
+		$("#btn").on("click",function(e){
+			//获取phone
+			e.preventDefault();
+			var phone = $("#phone").val();
+			console.info(phone);
+			if( /^1[345678]\d{9}$/.test(phone) )
+			{
+				console.info("ok")
+			}
+			else{
+				console.info("error")
+				$("#menu").show();
+			}
+			//用正则判断
+		})
+	// 点透
+		$("#link-menu").on("click",function(e){
+			$("#menu").toggle();
+		});
+		$("#mask").on("tap",function(){
+			$("#menu").hide();
+		})
+	</script>
+</body>
+</html>

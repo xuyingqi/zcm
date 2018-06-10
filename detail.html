@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>详情</title>
+	<link rel="stylesheet" href="css/detail.css">
+	<script src="./js/zepto.min.js"></script>
+	
+	<script src="./js/swipe.js"></script>
+	<script src="./js/touch.js"></script>
+	<script src="./js/fx.js"></script>
+	<script src="./js/fx_methods.js"></script>
+</head>
+<body>
+	<header>
+		<a class="link-back" href="index.html"></a>
+		<h2>招财猫理财</h2>
+		<a id="link-menu" class="link-menu" href="javascript:void(0);">菜单</a>
+	</header>
+	<section>
+		12.88%
+	</section>
+
+	<section>
+		<span>100元起投</span> <span>期限5天</span>
+	</section>
+
+	<section>
+		<span>省级律所法律支持</span>
+		<span>浙大友创战略入股</span>
+		<span>招财猫易贷严风控</span>
+		<span>千万级风险保障金</span>
+	</section>
+	
+
+	<section id="pro" class="pro">
+		<div id="box" class="box" data-pro="100">
+		    <span id="flag" style="left:0px" class="flag">0%</span> <!-- /*绝对定位 left值:data宽-自己的一半*/ -->
+		    <div class="data" style="width:0px" id="data"></data>
+		</div>
+	</section>
+	
+
+	<footer>
+		<p class="footlinks">
+			<a href="">触屏版</a>
+			|<a href="">电脑版</a>
+			|<a href="">APP下载</a>
+		</p>
+		<p class="copyright">@2016招财猫理财 浙ICP备14041616号</p>
+	</footer>
+
+	<div id = "menu" class="menu" style="display:none;">
+		<div class="menulist">
+			<a href="" class="icon-home1">&nbsp;&nbsp;首页&nbsp;&nbsp;</a>
+			<a href="" class="icon-home2">安全保障</a>
+			<a href="" class="icon-home3">我要投资</a>
+			<a href="" class="icon-home4">用户中心</a>
+		</div>
+		<div class="mask" id="mask">
+		</div>
+	</div>
+
+	<script src="./js/myApp.js"></script>
+
+	<script>
+	$(function(){
+		// 根据data-pro设置data的宽度
+		var pro = $("#box").attr("data-pro");
+		//计算出flag的目标值
+		var left = $("#box").width() *pro / 100 - $("#flag").width()/2;
+		console.info(left);
+
+		requestAnimationFrame(function(){
+
+			$("#data").css("width",pro+"%");
+			//修改flag中的文字
+			$("#flag").html(pro +"%");
+			//设置flag的位置
+			//left = data的宽度 - flag宽度/2;
+			$("#flag").css("left",left);
+		});
+	});
+	// setTimeout(function(){
+		
+	// },1000/60)
+		//$();
+		
+
+		//console.info( $("#data").width(), $("#flag").width());
+	// 点透
+		$("#link-menu").on("click",function(e){
+			//console.info($("#menu").css("display"))
+			// if($("#menu").css("display")  == "block"){
+			// 	$("#menu").hide();
+			// }
+			// else{
+			// 	$("#menu").show();
+			// }
+
+			$("#menu").toggle();
+			// e.stopPropagation();
+			// e.preventDefault();
+
+		});
+		$("#mask").on("tap",function(){
+			$("#menu").hide();
+		})
+	</script>
+</body>
+</html>

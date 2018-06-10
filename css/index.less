@@ -1,0 +1,122 @@
+@import "basic.less";
+@import "swipe.less";
+@color1 :#4b4a4a;
+@color2 :#808080;
+.c80{color:@color2}
+.c1{color:@color1}
+/**************************** 头部 **********/
+header,section,footer{
+	font-size:.2rem;
+}
+header{
+
+	line-height:.85rem;
+	height: .85rem;
+	background-color: #fa3432;
+	display: flex;
+	padding: 0 .2rem;
+	justify-content:space-between;
+	font-size:.26rem;
+	color:#fff;
+	.logo{
+		display:flex;
+		align-items:center;
+		img{width:.4rem;flex:0 0 auto;margin-right:.1rem;}
+		h1{font-size:.26rem}
+	}
+	a{
+		color:#fff;
+
+	}
+}
+/**************************** 头部end **********/
+section.toplinks{
+	height:.74rem;
+	line-height:.74rem;
+	display:flex;
+	justify-content:space-around;
+	font-size:.24rem;
+	
+	a{
+		.c1;
+	}
+}
+
+section.userlinks{
+	display:flex;
+	justify-content:space-around;
+	background-color:#fff;
+	border-bottom:.01rem solid #ddd;
+	padding:.3rem;
+	a{
+		display:flex;
+		flex-direction:column;
+		img{
+			width:.76rem;
+			margin-bottom:.1rem;
+		}
+		.c80;
+
+	}
+}
+
+
+section.title{
+	padding: 0 0.2rem;
+	margin-top:.2rem;
+	h2{
+		height: .4rem;
+    	font-size: 0.28rem;
+    	color: #494848;
+    	padding-left: 0.52rem;
+    	&.icon_user{
+    		background: url(../img/home_ico_08.png) no-repeat;
+    		background-size: .4rem .4rem;
+    	}
+    	&.icon_hot{
+    		background: url(../img/home_ico_09.png) no-repeat;
+    		background-size: .4rem .4rem;
+    	}
+    	&.icon_news{
+    		background: url(../img/home_ico_10.png) no-repeat;
+    		background-size: .4rem .4rem;
+    	}
+	}
+	
+	a{float:right;}
+}
+
+@import "products_mod.less";
+
+.news{
+	border:.01rem solid #ddd;
+	background-color:#fff;
+	ul{
+		
+		li{
+			margin:.2rem;
+			
+			a{
+				display:flex;
+				div{
+					flex: 1 1 auto;
+					p.newstitle{.c1;font-size:.25rem;}
+					p.info{
+						margin-top: .2rem;
+						font-size:.22rem;
+						.c80;
+						span{float:right;}
+					}
+				}
+				img{
+						width:.96rem;
+						height:.96rem;
+						flex: 0 0 auto;
+						margin-right:.15rem;
+					}
+			}
+		}
+	}
+}
+
+@import "footer.less";

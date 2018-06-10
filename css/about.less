@@ -1,0 +1,139 @@
+@import "basic.less";
+@color1 :#4b4a4a;
+@color2 :#808080;
+.c80{color:@color2}
+.c1{color:@color1}
+/**************************** 头部 **********/
+body{
+	position:relative;
+}
+header,section,footer{
+	font-size:.2rem;
+}
+header{
+	line-height:.85rem;
+	height: .85rem;
+	background-color: #fa3432;
+	display: flex;
+	padding: 0 .2rem;
+	justify-content:space-between;
+	align-items: center;
+	font-size:.26rem;
+	color:#fff;
+	.link-back{
+		background: url(../img/link_back.png) no-repeat;
+		background-size:.39rem .26rem;
+		width: .39rem;
+		height: .26rem;
+		text-indent: -999rem;
+	}
+	.link-menu{
+		background: url(../img/link_menu.png) no-repeat;
+		background-size:.36rem .29rem;
+		width: .36rem;
+		height: .29rem;
+		text-indent: -999rem;
+	}
+}
+section.about{
+	padding:.2rem;
+	color:#868484;
+	font-size:.24rem;
+	h3{
+		width:1.45rem;
+		font-size:.26rem;
+		margin:.3rem auto;
+		color:#525151;
+		padding:.2rem;
+		border-bottom: .02rem solid #fdb870;
+	}
+	p{
+		text-indent:2em;
+	}
+	ul.history{
+		font-size:0.22rem;
+		li{
+			height:.6rem;
+			span{
+				position:relative;
+				float: left;
+				&:before{
+					position:absolute;
+					content:"";
+					width:.12rem;
+					height:.12rem;
+					display:block;
+					border-radius:50%;
+					background-color:#ff982b;
+					right:-0.2rem;
+					top:50%;
+					transform:translate(0,-50%);
+				}
+				&:after{
+					content:"";
+					position:absolute;
+					width:.02rem;
+					height:.6rem;
+					background-color:#ff982b;
+					right:-0.15rem;
+					top:50%; 
+				}
+			}
+		}
+		li:last-child{
+			span:after{
+				display:none;
+			}
+		}
+	}
+}
+
+div.menu{
+	.mask{
+		position:absolute;
+		top: 1.95rem; /*115px + 80px;*/
+		left:0;
+		right:0;
+		bottom: 0;
+		background-color:rgba(0,0,0,.5);
+	}
+	.menulist{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		position:absolute;
+		top: .8rem; /*115px + 80px;*/
+		height:1.15rem;
+		width:100%;
+		background-color:#fff;
+
+		a.icon-home1{
+			background: url("../img/ico_menu_1.png") center top no-repeat;
+			background-size:.33rem .33rem;
+		}
+		a.icon-home2{
+			background: url("../img/ico_menu_2.png") center top no-repeat;
+			background-size:.33rem .33rem;
+		}
+		a.icon-home3{
+			background: url("../img/ico_menu_3.png") center top no-repeat;
+			background-size:.33rem .33rem;
+		}
+		a.icon-home4{
+			border-right: none;
+			background: url("../img/ico_menu_4.png") center top no-repeat;
+			background-size:.33rem .33rem;
+		}
+		a{
+			flex:1 1 auto;
+			text-align: center;
+			padding: 0.4rem .2rem 0;
+			font-size:.2rem;
+			color:red;
+			border-right:  1px solid red;
+		}
+		
+	}
+}
+@import "products_mod.less";
+@import "footer.less";

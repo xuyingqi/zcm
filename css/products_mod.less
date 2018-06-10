@@ -1,0 +1,63 @@
+@color1 :#4b4a4a;
+@color2 :#808080;
+.c80{color:@color2}
+.c1{color:@color1}
+.products {
+	.product{
+		margin:.2rem;
+		border:.01rem solid #ccc;
+		padding:.2rem;
+		background-color:#fff;
+		ul{
+			display:flex;
+			.data1{
+				width:2.64rem;
+				font-size: 0.38rem;
+			    color: #fb4438;
+			    text-align: center;
+			    line-height: 1.2rem;
+			}
+			.data2{
+				width:1.8rem;
+				height: 1.2rem;
+				line-height:.6rem;
+				.c80;
+				em{
+					.c1;
+					margin-right:.05rem;
+				}
+			}
+			.data3{
+				width:1.16rem;
+				height:1.16rem;
+				position:relative;
+				.outer{
+					position: absolute;
+					width:1.16rem;
+					height:1.16rem;
+				}
+				.bg,.inner,.over50{
+					position: absolute;
+					width:1.16rem;
+					height:1.16rem;
+					border:.03rem solid #ccc;
+					border-radius:50%;
+				}
+				.inner{
+					transition:transform .3s;
+					// top:-0.03rem;
+					// left:-0.03rem;
+				}
+				.bg{
+					font-size:.3rem;
+					color:red;
+					line-height:1.16rem;
+					text-align:center;
+				}
+				.inner,.over50{
+					border-color:red;
+				}
+			}
+		}
+	}
+}
